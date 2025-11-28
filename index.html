@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Talha</title>
+
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+   
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body
+    class="bg-slate-950 text-slate-200 font-sans antialiased selection:bg-blue-500/30"
+  >
+   
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6">
+      <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+        <div
+          class="font-bold text-2xl tracking-tighter text-white flex items-center gap-2"
+        >
+          <i data-lucide="code-2" class="text-blue-400"></i>
+          <span id="nav-name">User<span class="text-blue-400">.</span></span>
+        </div>
+
+        <div class="hidden md:flex gap-8 text-slate-300 font-medium">
+          <a href="#home" class="hover:text-blue-400 transition-colors">Home</a>
+          <a href="#about" class="hover:text-blue-400 transition-colors"
+            >About</a
+          >
+          <a href="#skills" class="hover:text-blue-400 transition-colors"
+            >Skills</a
+          >
+          <a href="#projects" class="hover:text-blue-400 transition-colors"
+            >Projects</a
+          >
+          <a href="#contact" class="hover:text-blue-400 transition-colors"
+            >Contact</a
+          >
+        </div>
+
+        <button id="menu-btn" class="md:hidden text-slate-300 hover:text-white">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-slate-900 border-b border-slate-800 absolute w-full left-0 top-full"
+      >
+        <div class="flex flex-col items-center gap-4 py-6 text-slate-300">
+          <a href="#home" class="hover:text-blue-400 w-full text-center py-2"
+            >Home</a
+          >
+          <a href="#about" class="hover:text-blue-400 w-full text-center py-2"
+            >About</a
+          >
+          <a href="#skills" class="hover:text-blue-400 w-full text-center py-2"
+            >Skills</a
+          >
+          <a
+            href="#projects"
+            class="hover:text-blue-400 w-full text-center py-2"
+            >Projects</a
+          >
+          <a href="#contact" class="hover:text-blue-400 w-full text-center py-2"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden"
+    >
+      <div
+        class="absolute top-20 left-[-10%] w-72 h-72 bg-blue-600/20 rounded-full blur-[100px]"
+      ></div>
+      <div
+        class="absolute bottom-20 right-[-10%] w-72 h-72 bg-purple-600/20 rounded-full blur-[100px]"
+      ></div>
+
+      <div class="max-w-4xl mx-auto px-4 text-center z-10">
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-sm font-medium mb-6 fade-in-up"
+        >
+          <span class="relative flex h-2 w-2">
+            <span
+              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"
+            ></span>
+            <span
+              class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"
+            ></span>
+          </span>
+          Open to Work
+        </div>
+
+        <h1
+          class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight leading-tight fade-in-up delay-100"
+        >
+          Hello, I'm
+          <span
+            id="hero-name"
+            class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500"
+            >Dev</span
+          >
+        </h1>
+
+        <p
+          id="hero-tagline"
+          class="text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed fade-in-up delay-200"
+        >
+          <!-- Injected via JS -->
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center items-center fade-in-up delay-300"
+        >
+          <a
+            href="#projects"
+            class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-all hover:scale-105 flex items-center gap-2"
+          >
+            View Work <i data-lucide="briefcase" class="w-4 h-4"></i>
+          </a>
+          <a
+            id="hero-github"
+            href="#"
+            target="_blank"
+            class="px-8 py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-lg font-medium transition-all hover:scale-105 flex items-center gap-2 border border-slate-700"
+          >
+            GitHub <i data-lucide="github" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <a
+        href="#about"
+        class="absolute bottom-10 left-1/2 -translate-x-1/2 text-slate-500 hover:text-white transition-colors animate-bounce"
+      >
+        <i data-lucide="chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-900/50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2
+              class="text-3xl font-bold text-white mb-6 flex items-center gap-2"
+            >
+              <i data-lucide="user" class="text-blue-400"></i> About Me
+            </h2>
+            <p
+              id="about-text"
+              class="text-slate-400 text-lg leading-relaxed mb-6"
+            >
+              <!-- Injected via JS -->
+            </p>
+
+            <div id="education-container" class="space-y-4">
+              <!-- Injected via JS -->
+            </div>
+          </div>
+
+          <div class="relative mt-8 md:mt-0">
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-20 transform rotate-3"
+            ></div>
+            <div
+              class="relative bg-slate-800 border border-slate-700 rounded-2xl p-6 md:p-8 shadow-2xl"
+            >
+              <div class="flex justify-between items-center mb-4">
+                <h3 class="text-sm font-semibold text-slate-400">
+                  developer.py
+                </h3>
+                <div class="flex gap-1.5">
+                  <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+              </div>
+              <div
+                class="bg-slate-950 rounded-lg p-4 font-mono text-sm text-slate-300 overflow-x-auto leading-relaxed"
+              >
+                <p>
+                  <span class="code-keyword">class</span>
+                  <span class="code-class">Developer</span>:
+                </p>
+                <p class="pl-4">
+                  <span class="code-keyword">def</span>
+                  <span class="code-function">__init__</span>(self):
+                </p>
+                <p class="pl-8">
+                  self.name =
+                  <span class="code-string" id="code-name">"User"</span>
+                </p>
+                <p class="pl-8">
+                  self.role = <span class="code-string">"Full Stack Developer"</span>
+                </p>
+                <p class="pl-8">
+                  self.hard_worker = <span class="code-bool">True</span>
+                </p>
+                <br />
+                <p class="pl-4">
+                  <span class="code-keyword">def</span>
+                  <span class="code-function">code</span>(self):
+                </p>
+                <p class="pl-8">
+                  <span class="code-keyword">while</span> self.hard_worker:
+                </p>
+                <p class="pl-12">self.solve_problems()</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-white mb-12 text-center">
+          Technical Arsenal
+        </h2>
+        <div id="skills-grid" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Injected via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-slate-900/50">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-white mb-12 text-center">
+          Featured Projects
+        </h2>
+        <div
+          id="projects-grid"
+          class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <!-- Injected via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-white mb-6">Let's Connect</h2>
+        <p class="text-slate-400 mb-8 text-lg">
+          Currently looking for new opportunities. My inbox is always open!
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12"
+        >
+          <a
+            id="contact-email"
+            href="#"
+            class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold text-lg transition-all hover:scale-105 flex items-center gap-2"
+          >
+            <i data-lucide="mail"></i> Say Hello
+          </a>
+          <a
+            id="contact-linkedin"
+            href="#"
+            target="_blank"
+            class="px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white rounded-xl font-semibold text-lg transition-all hover:scale-105 border border-slate-700 flex items-center gap-2"
+          >
+            <i data-lucide="linkedin"></i> LinkedIn
+          </a>
+        </div>
+
+        <footer class="border-t border-slate-800 pt-8 text-slate-500 text-sm">
+          <p>Designed & Built by <span id="footer-name">Dev</span></p>
+          <p class="mt-2">© <span id="year"></span> All rights reserved.</p>
+        </footer>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
